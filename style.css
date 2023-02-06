@@ -5,13 +5,17 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: #c1c1c1;
 }
 
 h1 {
     text-align: center;
+    font-weight: bold;
     font-size: 3em; 
+    color: red;
+    ;
+  
 }
 
 header {
@@ -28,6 +32,7 @@ input {
     font-size: 2em;
     width: 80%;
     padding-left: 10%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .add {
@@ -40,16 +45,19 @@ input {
     height: 120px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
 .add:hover {
     transition: 0.2s all;
     transform: scale(1.1);
+   
 }
 
 .add:active {
     background: #3cc93c;
-    color: white;
+    color: #000;
 }
 
 main {
@@ -100,6 +108,7 @@ main {
 .item-botao {
     flex: 25%;
     background: #c1c1c1;
+    font-family: 'Montserrat', sans-serif;
     /*border: 1px solid orangered;*/
 }
 
@@ -110,6 +119,7 @@ main {
     padding: 10px;
     height: 80px;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; 
 }
@@ -134,4 +144,19 @@ button.delete:active {
 
 .mdi-check-circle {
     color: green;
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 2em;
+    }
+    #inputTarefa {
+        font-size: 25px;
+    }
+
+    .add {
+        font-size: 11px;
+    } 
+
 }
